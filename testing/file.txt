@@ -1,0 +1,8 @@
+Penjelasan Kode:
+Autoloading: require 'vendor/autoload.php'; digunakan untuk memuat semua pustaka yang diinstal melalui Composer.
+Parser Instance: Membuat instance dari parser menggunakan new Parser();.
+Parse PDF: Membaca file PDF menggunakan parseFile('path/to/your/file.pdf');. Ganti 'path/to/your/file.pdf' dengan jalur ke file PDF Anda.
+Get Text: Mengambil teks dari objek PDF menggunakan $pdf->getText();.
+Display Text: Menampilkan teks yang diambil menggunakan echo nl2br($text);.
+
+Dengan langkah-langkah ini, Anda dapat dengan mudah mengekstrak teks dari file PDF menggunakan PHP. Jika Anda memiliki pertanyaan lebih lanjut atau memerlukan bantuan tambahan, jangan ragu untuk bertanya!

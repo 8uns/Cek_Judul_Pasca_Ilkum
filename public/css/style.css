@@ -1,0 +1,319 @@
+@font-face {
+    font-family: cabinBold;
+    src: url('../font/Cabin-Bold-TTF.ttf');
+}
+
+@font-face {
+    font-family: cabin;
+    src: url('../font/Cabin-Regular-TTF.ttf');
+}
+
+@font-face {
+    font-family: cantarelBold;
+    src: url('../font/Cantarell-Bold.otf');
+}
+
+@font-face {
+    font-family: cantarel;
+    src: url('../font/Cantarell-Regular.otf');
+}
+
+
+
+* {
+    font-family: cantarel;
+}
+
+body.klinik-body {
+    /* background-image: url('../img/background1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.background-login {
+    background-image: url('../img/background1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border-radius: 5px 5px 5px 5px; */
+}
+
+.banner img {
+    /* filter: blur(5px); */
+    height: 500px;
+    width: auto;
+}
+
+div#banner {
+    border-radius: 0px;
+}
+
+
+div#banner div, div#banner img {
+    border-radius: 0px;
+}
+
+div#banner p {
+    margin-top: 180px;
+}
+
+.container.sidebar {
+    position: relative;
+    margin-top: 12px;
+}
+
+.container.sidebar div div {
+    position: absolute;
+    z-index: 2;
+}
+
+.klinik-body .beranda-content {
+    height: 40rem;
+}
+
+.klinik-body .btn-primary, .klinik-body .btn-secondary, .klinik-body .btn-warning, .klinik-body .btn-success, .klinik-body .btn-danger {
+    border-radius: 5px;
+    border: none;
+}
+
+.klinik-body .btn-primary {
+    background: #DD4A48;
+    color: white;
+}
+
+.beranda-content .btn-primary, .beranda-content .btn-secondary {
+    box-shadow: 3px 29px 28px #00000038;
+    padding: 8px 23px;
+}
+
+body.klinik-body a.navbar-brand strong {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 1px 1px 3px #0000004d;
+}
+
+body.klinik-body a.navbar-brand {
+    font-size: 1rem;
+    color: #b5b5b5;
+    text-shadow: none;
+}
+
+.klinik-body #kontak a {
+    color: initial;
+}
+
+.klinik-body #kontak i {
+    color: #DD4A48;
+    font-size: 25px;
+}
+
+div#register {}
+
+div#register input, div#register select {
+    border-radius: 5px;
+}
+
+
+div#register button.btn.btn-primary, div#register button.btn.btn-secondary {
+
+    padding: 10px 15px
+}
+
+div#login input, div#login select {
+    border-radius: 6px;
+}
+
+
+div#login button.btn.btn-primary, div#login button.btn.btn-secondary {
+
+    padding: 10px 15px
+}
+
+div#login a.stretched-link {
+    color: #DD4A488a;
+}
+
+.container.sidebar a.nav-link {
+    color: #DD4A48;
+    font-size: 16px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 4px #0000004a;
+}
+
+.container.sidebar a.nav-link:hover {
+    background: #8ec7e6;
+    color: white;
+}
+
+.container.sidebar a.nav-link.active {
+    background: #DD4A488a;
+    color: white;
+}
+
+.container.sidebar i.fas {
+    width: 23px;
+}
+
+
+.klinik-body .alert.alert-danger {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 2px 2px 4px #00000052;
+    background: #e68eae;
+    color: white;
+}
+
+.container.dashboard {}
+
+.container.dashboard .card.border-secondary {
+    border-radius: 13px;
+    border: none;
+    box-shadow: 4px 4px 16px #00000047;
+}
+
+.container.dashboard .card .card-header {
+    font-weight: bold;
+}
+
+.container.dashboard .card-header {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.container.dashboard .card-body {
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+.container.dashboard .card {
+    border-radius: 5px;
+    border: none;
+}
+
+.container.registerpasien {}
+
+.container.registerpasien .card {
+    border: none;
+    box-shadow: 4px 4px 16px #00000047;
+    border-radius: 15px;
+}
+
+.container.registerpasien .card a.card-link {
+    color: #8ec7e6;
+}
+
+.container.registerpasien .card h1 {
+    color: #2e92c9;
+    font-size: 10rem;
+}
+
+body.klinik-body ul.dropdown-menu.show {
+    border: none;
+    box-shadow: 4px 4px 4px #0000001c;
+    background: #f3f3f3;
+    padding: 19px 11px;
+    width: 14rem;
+}
+
+body.klinik-body ul.dropdown-menu.show a {
+    color: #737373;
+    cursor: pointer;
+}
+
+body.klinik-body ul.dropdown-menu.show a i {
+    padding: 0px 10px;
+    width: 20px;
+}
+
+.container.profil {}
+
+.container.profil .card {
+    border-radius: 5px;
+    border: none;
+    box-shadow: 4px 4px 16px #00000047;
+    padding-bottom: 13px;
+    padding-right: 9px;
+}
+
+div#login\ admin {
+    background: #ffffffad;
+    color: #222222;
+    border-radius: 10px;
+    box-shadow: 4px 4px 58px #00000030;
+}
+
+div#login\ admin button.btn.btn-primary {
+    background: #DD4A48;
+    padding: 10px 65px;
+    color: white;
+    font-weight: bold;
+}
+
+div#login\ admin input {
+    border-radius: 4px;
+}
+
+.container.antrian-pasien {}
+
+.klinik-body .antrian-pasien .card {
+    border: none;
+    box-shadow: 4px 4px 16px #00000047;
+    border-radius: 15px;
+}
+
+.klinik-body .btn-warning {
+    background: #c9b62e;
+}
+
+.klinik-body .btn-success {
+    background: #2ec997;
+}
+
+.klinik-body .btn-danger {
+    background: #c92e3c;
+}
+
+body.klinik-body .card {
+    border: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 4px 4px 16px #00000047;
+}
+
+.row.notfound p {
+    margin: 0px;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+
+.dataTables_paginate a.paginate_button.current {
+    border-radius: 5px;
+    padding: 2px 17px;
+}
+
+#tableSearch_filter input[type="search"] {
+    border-radius: 5px;
+    box-shadow: 2px 2px 14px #00000052;
+    border: none;
+    padding: 6px 15px;
+}
+
+#tableSearch_wrapper select {
+    border-radius: 8px;
+    padding: 5px 8px;
+}
+
+body.klinik-body nav.navbar.navbar-expand-lg.navbar-dark {
+    background: #DD4A48;
+}
+
+div#kontak a.navbar-brand.text-dark strong {
+    color: #DD4A48;
+}
+
+.container-fluid.tentang {
+    background: #F5EEDC;
+}

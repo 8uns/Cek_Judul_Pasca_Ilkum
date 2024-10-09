@@ -63,13 +63,11 @@ class App
         if (!isset($_SESSION['username'])) {
             if ($this->controller == 'Admin') {
                 $this->controller = "Admin";
-            } elseif ($this->controller == 'Login') {
-                $this->controller =  $this->controller;
-                // } elseif ($this->controller == 'Register') {
-                //     $this->controller =  $this->controller;
-                // } elseif ($this->controller == 'Beranda' || $this->controller == 'Dashboard') {
-                //     $this->controller =  'Beranda';
-            } else {
+            }
+            // elseif ($this->controller == 'Login') {
+            //     $this->controller =  $this->controller;
+            // }
+            else {
                 $this->controller = "Home";
             }
         } else {
@@ -93,8 +91,6 @@ class App
                     case "Papers":
                         $this->controller = $controller;
                         break;
-
-
                     default:
                         $this->controller = "Dashboard";
                 }

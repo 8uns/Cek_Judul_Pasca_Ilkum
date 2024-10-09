@@ -12,7 +12,6 @@ define('DB_USER', 'pascailkumDB');
 define('DB_PASS', '#DBPascailkum!123');
 define('DB_NAME', 'plagiarism_detection');
 
-
 // // URL
 // define('BASEURL', (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on'
 //     ? "https"

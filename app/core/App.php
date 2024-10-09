@@ -77,6 +77,9 @@ class App
                 case "Home":
                     $this->controller = $controller;
                     break;
+                case "Login":
+                    $this->controller = $controller;
+                    break;
                 default:
                     $this->controller = "Home";
             }

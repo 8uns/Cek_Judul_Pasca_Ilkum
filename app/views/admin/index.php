@@ -20,7 +20,7 @@
             <!-- </div> -->
             <div class="col-5">
                 <h3 class="border-bottom mb-4"><strong> <i class="fab fa-keycdn"></i> Sistem Deteksi Plagiarisme</strong></h3>
-                <form action="login/loggedin/admin" method="post">
+                <form action="login/loggedin" method="post">
 
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Username</label>

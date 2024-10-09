@@ -8,6 +8,11 @@ class Login_model
         $this->db = new Database;
     }
 
+    public function login($data)
+    {
+        return $this->loginAdmin($data);
+    }
+
     public function loginAdmin($data)
     {
         $true = false;
@@ -30,10 +35,5 @@ class Login_model
             }
         }
         return $true;
-    }
-
-    public function login($user, $data)
-    {
-        return $this->loginAdmin($data);
     }
 }

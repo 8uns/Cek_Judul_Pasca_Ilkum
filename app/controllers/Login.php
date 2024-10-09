@@ -9,25 +9,20 @@ class Login extends Controller
         $this->view('templates/login');
         // $this->view('templates/footer');
         $this->view('templates/foot');
-
     }
 
-    public function loggedin($user)
+    public function loggedin()
     {
-        if ($this->model('Login_model')->login($user, $_POST)) {
+
+        // echo  md5($_POST['password']);
+
+        if ($this->model('Login_model')->login($_POST)) {
             header('Location: ' . BASEURL);
             exit;
         } else {
-            if ($user == 'admin') {
-                Flasher::setFlash('Failed', 'The username or password you entered is wrong', 'danger');
-                header('Location: ' . BASEURL . 'admin');
-                exit;
-            } else {
-                Flasher::setFlash('Failed', 'The username or password you entered is wrong', 'danger');
-                header('Location: ' . BASEURL . 'login');
-                exit;
-            }
+            Flasher::setFlash('Failed', 'The username or password you entered is wrong', 'danger');
+            header('Location: ' . BASEURL . 'admin');
+            exit;
         }
     }
-
 }

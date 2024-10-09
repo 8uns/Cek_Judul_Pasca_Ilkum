@@ -61,39 +61,49 @@ class App
     {
 
         if (!isset($_SESSION['username'])) {
-            if ($this->controller == 'Admin') {
-                $this->controller = "Admin";
-            }
+            // if ($this->controller == 'Home') {
+            //     $this->controller = "Home";
+            // } else {
+            //     $this->controller = "Admin";
+            // }
             // elseif ($this->controller == 'Login') {
             //     $this->controller =  $this->controller;
             // }
-            else {
-                $this->controller = "Admin";
+
+            switch ($controller) {
+                case "Admin":
+                    $this->controller = $controller;
+                    break;
+                case "Home":
+                    $this->controller = $controller;
+                    break;
+                default:
+                    $this->controller = "Home";
             }
         } else {
-            if ($_SESSION['level'] == '0') {
-                switch ($controller) {
-                    case "Dashboard":
-                        $this->controller = $controller;
-                        break;
-                    case "Beranda":
-                        $this->controller = $controller;
-                        break;
-                    case "Profil":
-                        $this->controller = $controller;
-                        break;
-                    case "Administrator":
-                        $this->controller = $controller;
-                        break;
-                    case "Logout":
-                        $this->controller = $controller;
-                        break;
-                    case "Papers":
-                        $this->controller = $controller;
-                        break;
-                    default:
-                        $this->controller = "Dashboard";
-                }
+            // if ($_SESSION['level'] == '0') {
+            switch ($controller) {
+                case "Dashboard":
+                    $this->controller = $controller;
+                    break;
+                case "Beranda":
+                    $this->controller = $controller;
+                    break;
+                case "Profil":
+                    $this->controller = $controller;
+                    break;
+                case "Administrator":
+                    $this->controller = $controller;
+                    break;
+                case "Logout":
+                    $this->controller = $controller;
+                    break;
+                case "Papers":
+                    $this->controller = $controller;
+                    break;
+                default:
+                    $this->controller = "Dashboard";
+                    // }
             }
             //  elseif ($_SESSION['level'] > 0) {
             //     if ($_SESSION['ale'] == null && $this->controller != "Logout"  && $this->controller != "Instrumen") {

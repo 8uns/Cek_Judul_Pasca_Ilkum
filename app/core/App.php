@@ -68,7 +68,7 @@ class App
             //     $this->controller =  $this->controller;
             // }
             else {
-                $this->controller = "Home";
+                $this->controller = "Admin";
             }
         } else {
             if ($_SESSION['level'] == '0') {

@@ -1,6 +1,6 @@
 <?php
 // define('BASEURL', 'http://localhost/deteksi_plagiarisme/public/');
-define('BASEURL', 'http://localhost/pasca_ilmu_hukum/public/');
+define('BASEURL', 'http://103.67.79.236/pasca_ilmu_hukum/public/');
 // // define('BASEURL', 'http://192.168.1.18:8080/deteksi_plagiarisme/public/');
 
 // // URL

@@ -13,11 +13,10 @@
     <div class="row justify-content-end">
         <div class="col-9">
 
-            <div class="row mb-5">
+            <!-- <div class="row mb-5">
                 <div class="col">
                     <div class="card" style="width: 100%;">
                         <div class="card-body text-center">
-                            <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Cek Karya Ilmiyah
                             </button>
@@ -25,7 +24,6 @@
 
                         </div>
 
-                        <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
@@ -52,7 +50,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
             <!-- <div class="row mb-5">

@@ -37,7 +37,7 @@ class Paper_model
         return $this->db->resultSet();
     }
 
-    public function addData($data, $document)
+    public function addData($data, $document, $tekspaper)
     {
         $query = "INSERT INTO `papers`
                     (title, years, document, text_doc) 
@@ -47,7 +47,7 @@ class Paper_model
         $this->db->bind('title', $data['title']);
         $this->db->bind('years', $data['years']);
         $this->db->bind('document', $document);
-        $this->db->bind('text_doc', $data['text_doc']);
+        $this->db->bind('text_doc', $tekspaper);
 
         $this->db->execute();
         return $this->db->rowCount();
@@ -56,7 +56,7 @@ class Paper_model
 
 
 
-    public function updateData($data, $id, $document)
+    public function updateData($data, $id, $document, $tekspaper)
     {
         if ($document == 'empty') {
             $query = "UPDATE `papers` 
@@ -80,7 +80,7 @@ class Paper_model
                     SET 
                     title=:title, 
                     document=:document, 
-                    -- text_doc=:text_doc, 
+                    text_doc=:text_doc, 
                     years=:years
                     WHERE paper_id=:paper_id
                         ";
@@ -88,7 +88,7 @@ class Paper_model
 
             $this->db->bind('title', $data['title']);
             $this->db->bind('document', $document);
-            // $this->db->bind('text_doc', $data['text_doc']);
+            $this->db->bind('text_doc', $tekspaper);
             $this->db->bind('years', $data['years']);
             $this->db->bind('paper_id', $id);
         }

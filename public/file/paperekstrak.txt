@@ -1,0 +1,331 @@
+ OPEN ACCESS                                                                              ISSN : 2686-1089 (ONLINE)
+ J. OF ICT, VOL. 4, NO.2, PP.088-093, DES 2022                                            -DEMO- : 10.52661
+
+
+                  Journal of Informatics and Communications Technology (JICT)
+
+
+
+
+   DNS Server Berbasis Ubuntu-22.04.1-Eve-
+               NG-5.0.3.105
+Nurwan Reza Fachrur Rozi #1 Siti Zahrotul Fajriyah #2 Ricka Maulida #3 Nabila Rahmania Az Zahra #4
+                          1,2,3,4
+                          Teknik Telekomunikasi, Institut Teknologi Telkom Jakarta
+        Jalan Daan Mogot KM.11, Kedaung Kali Angke, Cengkareng, DKI Jakarta 11710, Indonesia
+  1
+    nurwan@ittelkom-jkt.ac.id, 2 sitizahrotul@ittelkom-jkt.ac.id, 3 1202211002@student.ittelkom-jkt.ac.id, 4
+                                    1202215013@student.ittelkom-jkt.ac.id
+
+                                                         Abstrak
+
+
+  Setelah lulus dari Fakultas Teknik IT Telkom Jakarta, mahasiswa akan menguasai teknologi jaringan. Untuk menaikkan
+tingkat kualifikasi, diperlukan banyak pengalaman praktis di lapangan. Perangkat komputasi harus terhubung ke jaringan
+lokal yang sangat diperlukan untuk manajemen terpusat dalam melakukan tugas, memfasilitasi pengumpulan data, dan
+berbagi sumber daya dalam organisasi. IP yang berbeda dapat di alamatkan pada setiap komputer untuk terhubung ke
+jaringan melalui nirkabel. Di dalam memfasilitasi akses, perangkat server dapat mengimplementasikan domain name server.
+Hal ini menjadi mudah dalam mengingat nama domain daripada alamat IP. Metode dalam penulisan ini dimulai dengan
+Analisis merupakan analisa kebutuhan hardware & software, Perancangan yaitu membuat topologi jaringan,
+Implementasi & Konfigurasi dalam aplikasi ubuntu-eve-ng, dan Pengujian ialah menguji hasil aplikasi. Uji coba yang
+dijalankan dalam menguji koneksi pengguna ke server menggunakan alamat IP dan domain yang menghasilkan koneksi,
+serta kueri dan alamat domain yang dikonversi menggunakan perintah nslookup dari PC pengguna ke server. ke alamat IP
+dalam -DEMO- kasus penerapan praktikum di Fakultas Teknik IT Telkom Jakarta.
+
+Kata Kunci : E-learning Praktikum, DNS Server, Simulasi Eve-NG, Ubuntu-22.04.1
+
+
+                                                    1.   PENDAHULUAN
+
+   Pada setiap perusahaan disaat menyelesaikan tugas-tugas pekerjaan sangat memerlukan perangkat komputer
+yang terhubung ke jaringan lokal LAN yang terhubung ke server dimana untuk menunjang tugas pekerjaan
+dapat diselesaikan untuk mengakses data seperti membagi resoursce sharing print maupun sharing folder data.
+IP Address diperlukan pada perangkat komputer untuk koneksi antara Server dengan Pc Cliect, berkembangnya
+terknologi menjadi memudahkan tanpa ip address pengguna dapat mengakses server, penggunaan computer
+name atau nama domain (dns) name server didalam jaringan untuk memanggil komputer, sehingga tidak perlu
+mengingat ip address. Ubuntu adalah salah satu distro linux yang open source, sehingga desktop dan server
+banyak menggunakan linux, selain itu linux memiliki kelebihan kebal terhadap virus dibanding windows. Eve-
+NG diterapkan sebagai simulator multivendor untuk simulasi perangkat server dan jaringan device seperti linux,
+cisco dan juniper dalam memudah kan untuk pembelajaran praktikum [1] [2].
+
+
+                                                 II. TINJAUAN PUSTAKA
+2.1 Dns-Server
+NURWAN ET. AL. / J. OF ICT. 2022
+Paper for Journal of ICT                                                                                    2
+
+
+
+
+     Dns-Server merupakan server yang khusus digunakan untuk mencocokkan nama host (ittelkom-
+     jakarta.com) dengan Protokol Internet atau alamat IP yang sesuai. Server DNS berisi database alamat IP
+     publik dan nama domain yang sesuai [3].
+
+2.2 Ubuntu Server
+    Sebelum membandingkan perbedaan antara Ubuntu Desktop dan Ubuntu Server, mari kita tentukan apa itu
+    server. Server biasanya datang dalam dua faktor bentuk : rackmount dan tower. Server -DEMO- pada dasarnya
+    adalah sebuah desktop, tetapi bagian-bagiannya seringkali berbeda dengan fokus pada longevity, stabilitas,
+    dan keamanan. Misalnya, server tower menggunakan RAM koreksi kode kesalahan (ECC), sedangkan
+    desktop non-server tidak. Selain itu, server tidak harus menyertakan periferal seperti monitor, keyboard,
+    dan mouse. Menjalankan server tanpa periferal dikenal sebagai pengaturan "tanpa kepala". Perangkat lunak
+    untuk server terdiri dari sistem operasi, perangkat lunak server (misalnya, Apache untuk hosting situs web;
+    server cetak CUPS), dan perangkat lunak keamanan. Jadi, -DEMO- Server, kemudian, adalah sistem operasi
+    untuk mesin server berbasis Ubuntu [-DEMO-].
+
+2.3 Eve-NG
+    EVE-NG adalah alat yang mirip dengan GNS3 yang memberi admin jaringan cara untuk mensimulasikan
+    router, sakelar, firewall, dan banyak peralatan virtual lainnya. Multivendor Device dapat dibuat pada lab
+    jaringan. Jika vendor jaringan memiliki alat virtual, kemungkinan besar dapat berjalan di EVE-NG. Dapat
+    menambahkan gambar server Linux dan Windows. Mendukung migrasi -DEMO- peningkatan
+    jaringan/keamanan/sistem yang -DEMO- besar, tetapi tidak memiliki lab untuk menguji semua skenario
+    spesifik sepenuhnya? EVE-NG dapat membantu. Versi komunitas 100% gratis dan open source [5][6][7].
+
+                                                     III. METODE PENELITIAN
+
+  Ada empat metode yang diterapkan dalam penulisan ini yaitu Analysis merupakan menganalisa kebutuhan
+hardware & kebutuhan software, Perancangan akan merancang jaringan topologi, Implementasi &
+Konfigurasi dns server dengan Ubuntu-Eve-NG, dan yang terakhir Pengujian merupakan penulis
+melaksanakan pemantauan dns -DEMO- serta jaringan [8][9].
+3.1 Diagram Alir Penulisan
+                                                          Mulai                                     Pengecekan Hardware,
+                                                                                                    Software & Konfigurasi
+                                   Persiapan & Instalasi Software : Eve-NG-5.03.1, Ubuntu-22.04.-DEMO-
+
+                                                                        Tidak
+                                                         Berhasil
+                                                       Ya
+                                                Perancangan Topologi Jaringan
+
+
+                                           Implementasi & Konfigurasi Dns Server
+
+
+                                                         Pengujian
+
+                                                        Kesimpulan
+
+
+                                                            Selesai
+
+                                          Fig. 2. Diagram Alir Penulisan
+
+
+                                                      IV. HASIL DAN DISKUSI
+
+4.1 Analisis Permasalahan
+NURWAN ET. AL. / J. OF ICT. 2022
+Paper for Journal of ICT                                                                    3
+
+
+
+
+   Permasalahan yang terlihat adanya sistem yang membutuhkan ketersediaan server dan belum adanya server
+yang dapat digunakan untuk web & domain server pada sistem yang dibuat.
+
+4.2 Topology
+    Topology yang dirancang dengan server pada simulator Eve-NG berbasis Linux Ubuntu yang terhubung ke
+internet.
+
+
+
+
+                                   Fig. 3. Linux Ubuntu-22.04.1 di Eve-NG-5.0.3-105
+
+-DEMO-.2.2 Hardware & Software
+         Spesifikasi Hardware & Software pada server yang digunakan adalah :
+
+                                                     TABLE I
+                                                HARDWARE & SOFTWARE
+
+                       No                               Hardware & Software
+                                            Aplikasi                             Software
+                        1                   Eve-NG                               5.0.3-105
+                        2                  Dns Server                          Ubuntu-22.04.1
+                        3                  Notebook                            Asus RAM 20G
+                        4                   VMware                             Workstation 17
+
+4.2.2      Implementasi & Konfigurasi
+     -     Unduh ubuntu Desktop atau Server Image terbaru dari situs web Ubuntu
+           https://ubuntu.com/download/desktop [10].
+     -     WinSCP digunakan untuk Login dan masuk -DEMO- folder ke EVE-NG : /opt/unetlab/addons/qemu/linux-
+           ubuntu22 dan buat folder baru di bawah Eve-NG dan unggah image iso yang sama. Setelah image iso
+           diunggah harap ganti namanya dengan cdrom.iso [11]
+
+
+
+
+                       Fig 4. Upload Iso Linux ke folder : /opt/unetlab/addons/qemu/linux-ubuntu22
+
+           Pindahkan file iso menjadi cdrom.iso
+
+
+
+                                   Fig 5. Pindahkan file iso menjadi cdrom.iso
+           Buat disk baru untuk menginstal image ubuntu, ruang disk tergantung pada kebutuhan misalnya 25G
+           atau 30 G.
+NURWAN ET. AL. / J. OF ICT. 2022
+Paper for Journal of ICT                                                               4
+
+
+
+
+                                           Fig 6. Install image Ubuntu
+
+     -     Lalu buka EVE-NG GUI dan buat lab baru
+
+
+
+
+                                         Fig 7. Eve-G GUI dan New Lab
+
+
+
+
+                   Fig 8. Pilih Image Ubuntu                 Fig 9. -DEMO- RAM &Core CPU
+
+1.   Implementasi Instalasi dan Konfigurasi Linux Ubuntu Server 22.04.1 pada Simulator Eve-NG
+     Pada implementasi server dibutuhkan internet yang bagus. Pada penulisan ini dikonfigurasi di simulator
+Eve-NG dan Vmware 17 Workstation. Konfigurasi network dilakukan saat instalasi dan konfigurasi tambahan
+saat instalasi sudah selesai. Setelah itu memasukkan hostname sebagai nama komputer, dan username sebagai
+login pada sistem. Untuk set Linux Ubuntu pada Simulator -DEMO- & Instalasi & Mode Konfigurasi dapat
+terlihat pada penerapan dibawah ini [12][13][14] :
+
+
+
+
+-DEMO- 10. Pilih coba atau instal ubuntu      Fig 11. Loading file ubuntu      Fig 12. Pilih Instal Ubuntu
+NURWAN ET. AL. / J. OF ICT. 2022
+Paper for Journal of ICT                                                                      5
+
+
+
+
+       Fig 13. Pilih Jenis Keyboard      Fig 14. Update dan Software Lainnya Fig 15. Hapus Disk,Instal Ubuntu
+
+Pilih instalasi normal, pilih Update -DEMO- saat -DEMO- Ubuntu -DEMO- Anda memiliki server DHCP dan
+terhubung ke Internet. Hapus Disk dan Instal Ubuntu – Pemilihan ini dapat mendelete semua data yang berada
+dari disk dan instal Ubuntu baru. Pastikan tidak menjalankan sistem operasi lainnya.
+
+
+
+
+     Fig 16. Peringatan hal -DEMO- sama         Fig 17. Pilih zona waktu         Fig 18. Pengaturan Nama, System
+
+
+
+
+                          Fig 19. Proses Instalasi Ubuntu        Fig 20. Instalasi Selesai
+
+Apabila tidak ada kesalahan maka instalasi sudah selesai. Lalu lakukan update repositori di sistem linux terbarui
+dengan daftar paket-paket terbaru.
+
+
+
+
+                                          Fig 21. Update Software Ubuntu
+2.    Implementasi Jaringan
+      Di server terdapat satu interface yaitu koneksi ke internet. Konfigurasi Internet Protocol (IP) terdapat pada
+      file /etc/netplan/01-network-manager.yaml :
+NURWAN ET. AL. / J. OF ICT. 2022
+Paper for Journal of ICT                                                                   6
+
+
+
+
+                                    Fig 22. Pengaturan Network Interface
+
+3.   Implementasi Ubuntu Dns-Server 22.04.1
+     Aplikasi bind9 di gunakan pada saat Install Ubuntu Dns-Server 22.04.1, dengan mengetikkan perintah :
+     apt-get -DEMO- bind9
+
+
+
+
+                                                 Fig 23. bind9
+
+Ada file-file yang harus dikonfigurasi setelah selesai instalasi dengan mengetikkan perintah /etc/resolv.conf
+
+
+
+
+                                          -DEMO- 23. file resolv.conf
+Lalu konfigurasi file hosts dengan -DEMO- perintah /etc/hosts supaya server bisa memetakan hostname
+ke alamat -DEMO- address.
+NURWAN ET. AL. / J. OF ICT. 2022
+Paper for Journal of ICT                                                                     7
+
+
+
+
+                                                 Fig 24. file Hosts
+
+TLD (Top Level Domain) digunakan untuk mengkonfigurasi zone domain dengan mengetikkan perintah
+/etc/bind/named.conf.local untuk memberikan nama domain pada Dns-Server.
+
+
+
+
+                                           Fig 25. file named.conf.local
+
+Konfigurasi sebelumnya terdiri dari domain zone -DEMO- yaitu ittelkom-jakarta.ac.id -DEMO- forward dan zone
+137.168.192 sebagai reverse.
+
+Lalu dibutuhkan forward dan reverse dalam domain tersebut.
+vim /etc/bind/db.ittj & -DEMO- /etc/bind/db.web
+
+
+
+
+   Fig 26. file db.ittj-Standard-PC-i440FX-PIIX-1996                   Fig 27. file db.web
+
+Instalasi & konfigurasi semuanya telah dilaksanakan, setelah itu harus melakukan pengujian Dns-Server, Untuk
+melihat hasil Dns-Server berjalan baik atau tidak yaitu dengan perintah ping & nslookup
+ping ittelkom-jakarta.ac.id & nslookup ittelkom-jakarta.ac.id
+
+
+
+
+                                   Fig 28. ping & nslookup ittelkom-jakarta.ac.id
+
+Terlihat pada Fig.28, ping serta nslookup domain telah mengarah ke -DEMO- server.
+
+
+
+                                                V. KESIMPULAN
+NURWAN ET. AL. / J. OF ICT. 2022
+Paper for Journal of ICT                                                                                       8
+
+
+
+
+        Dari hasil implementasi Ubuntu Server 22.04 sebagai sistem simulasi praktikum di Institut Teknologi
+Telkom Jakarta dapat ditarik kesimpulan bahwa Deployment server berhasil dibangun di server berbasis Ubuntu
+22.04.1 dengan emulator Eve-ng 5.3.105 dimana sistem ini digunakan -DEMO- tujuan pembelajaran aplikasi
+menggunakan teknologi simulasi oleh mahasiswa dan dosen dan -DEMO- keberadaan server agar memudahkan
+dalam mengakses dan mengelola sistem yang lebih baik. Untuk lebih baik kembali adanya penempatan server
+yang permanent dalam memudahkan pengelolaan dan pembelajaran. Next nya ditambahkan Web Server,
+Database server untuk kelengkapan dalam implementasi dan konfigurasi.
+
+                                                        DAFTAR PUSTAKA
+[1] S. Kasus, D. Smkn, B. Dua, and S. Smk, “Penerapan Simulasi Emulated Virtual Environment – New Generation ( Eve-NG ),” vol. 2,
+     no. 1, pp. 26–-DEMO-, 2021, doi: 10.33448/rsd-v9i11.9562.
+[2] C. Packet, T. Version, S. Kasus, and T. -DEMO-, “Penerapan Modul Praktikum Jaringan Komunikasi Data & Komputer Berbasis,”
+     vol.1089, pp. 1–10, 2021.
+[3] J. Ahmed, “Monitoring Security of Enterprise Hosts via DNS Data Analysis,” no. June, 2021.
+[4] N. Trampel and L. Schr, “Praktikumsbericht,” no. November, 2020.
+[5] Https://www.eve-ng.net/
+[6] M. Doe, “EVE-NG Community Cookbook -DEMO- of Contents,” pp. 1–152.
+[7] M. Doe, “EVE-NG Professional Cookbook Table of Contents.”
+[8] Nurrahman, Fadli. "Implementasi Linux Ubuntu Server 18.04 Sebagai Server Sistem Informasi Akademik Pada Sekolah Tinggi
+     Manajemen Informatika & Komputer Samarinda." DiJITAC (Digital Journal of Information Technology and Communication) 1.1
+     (2020): 55-77.
+[9] Robles-Gómez, Antonio, et al. "Emulating and evaluating virtual remote laboratories for cybersecurity. " Sensors 20.11 (2020): 3011.
+[10] Https://releases.-DEMO-.com/22.04/
+[-DEMO-] Oliveira, Valdinei Carlos. "Simulador Eve-NG em projetos de redes heterogêneas: um estudo sobre a importância da simulação em
+     redes de computadores." Research, Society and Development 9.11 (2020): e1199119562-e1199119562.
+[12] Husen, Zakaria, and M. Syukri Surbakti. Membangun Server dan Jaringan Komputer dengan Linux Ubuntu. Syiah Kuala University
+     Press, 2020.
+[13] Yang, Zhen, et al. "An effective hybrid approach to the -DEMO- capacitated facility location problem." European Journal of
+     Operational Research 275.2 (2019): 467-480.
+[14] Hidayat, Taufik, and Catur Iswayudi. "Optimalisasi Kinerja Server Menggunakan Manajemen DNS Optimizing Server Performance
+     Using DNS Management (Studi Kasus : IST AKPRIND Yokyakarta)." Jurnal Jarkom 6.1 (2018): 50-60.

@@ -1,16 +1,10 @@
 <?php
-define('BASEURL', 'http://localhost/deteksi_plagiarisme/public/');
+define('BASEURL', 'http://localhost/cek_judul_pasca_ilkum/public/');
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_USER', 'admin');
+define('DB_PASS', '#admin*');
 define('DB_NAME', 'plagiarism_detection');
 
-
-// define('BASEURL', 'http://103.67.79.236/pasca_ilmu_hukum/public/');
-// define('DB_HOST', 'localhost');
-// define('DB_USER', 'pascailkumDB');
-// define('DB_PASS', '#DBPascailkum!123');
-// define('DB_NAME', 'plagiarism_detection');
 
 // // URL
 // define('BASEURL', (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on'

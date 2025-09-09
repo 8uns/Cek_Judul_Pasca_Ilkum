@@ -1,8 +1,9 @@
 # 📚 Website Pencarian Kemiripan Judul Penelitian
 
-Repository ini berisi implementasi website berbasis **PHP** untuk melakukan pencarian kemiripan judul penelitian.  
-Sistem ini ditujukan untuk membantu lembaga pendidikan atau institusi dalam memverifikasi keunikan karya ilmiah mahasiswa/peneliti melalui deteksi kemiripan judul menggunakan algoritma pencocokan string.
+Aplikasi ini berfungsi sebagai alat untuk mendeteksi kesamaan judul penelitian.
+Dengan adanya sistem ini, institusi dapat memantau, mengelola, serta memastikan judul penelitian yang diajukan mahasiswa tidak tumpang tindih dengan karya yang sudah ada.
 
+Dengan memanfaatkan algoritma Levenshtein Distance dan Boyer Moore, sistem dapat mengukur tingkat kesamaan antar judul serta membantu institusi dalam memastikan karya ilmiah yang diajukan tidak tumpang tindih dengan penelitian yang sudah ada.
 ---
 
 ## 📝 Deskripsi
